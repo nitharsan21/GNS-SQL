@@ -9,15 +9,15 @@ from Partie;
 
 select * 
 from Partie
-where vainqueur != null; 
+where vainqueur is not null; 
 
 select * 
 from Partie
-where vainqueur = null;
+where vainqueur is null;
 
 select * 
 from Partie
-where adversaire = null;
+where adversaire is null;
 
  
 select * 
@@ -36,14 +36,14 @@ where vainqueur = 5;
 select * 
 from Partie
 where initiateur = 5
-and adversaire = null;
+and adversaire is null;
 
 
 select * 
 from Partie
 where initiateur = 5
 or adversaire = 5
-and vainqueur = null;
+and vainqueur is null;
 
 select * 
 from Partie
@@ -52,7 +52,7 @@ where suivant = 5;
 select * 
 from Partie
 where initiateur != 5
-and adversaire = null;
+and adversaire is null;
 
 
 
