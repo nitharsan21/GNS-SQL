@@ -48,7 +48,6 @@ ALTER TABLE Partie ADD CONSTRAINT FK_Partie_numeroJoueur_2 FOREIGN KEY (vainqueu
 ALTER TABLE Partie ADD CONSTRAINT FK_Partie_numeroJoueur_3 FOREIGN KEY (suivant) REFERENCES Joueur(numeroJoueur);
 ALTER TABLE Partie ADD CONSTRAINT FK_Partie_numeroJoueur_Couleur FOREIGN KEY (couleurInitiateur) REFERENCES Couleur(numeroJoueur);
 ALTER TABLE Partie ADD CONSTRAINT FK_Partie_numeroJoueur_Couleur_4 FOREIGN KEY (couleurAdversaire) REFERENCES Couleur(numeroJoueur);
-ALTER TABLE Partie ADD CONSTRAINT FK_Partie_numeroJoueur_3 FOREIGN KEY (suivant) REFERENCES Joueur(numeroJoueur);
 
 
 
@@ -65,14 +64,14 @@ insert into Couleur values(1,'Blanc');
 insert into Couleur values(2,'Noir');
 
 
-insert into Partie values(1,'01/05/2018',5,2,2,null,1,2);
-insert into Partie values(2,'01/05/2018',5,2,5,null,2,1);
-insert into Partie values(3,'01/05/2018',5,null,null,5,1,null);
-insert into Partie values(4,'01/05/2018',2,null,null,null,2,null);
-insert into Partie values(5,'02/05/2018',5,1,null,1,1,2);
-insert into Partie values(6,'02/05/2018',5,1,null,5,1,2);
-insert into Partie values(7,'02/05/2018',1,null,null,null,null,2);
-insert into Partie values(8,'02/05/2018',1,null,null,null,null,2);
-insert into Partie values(9,'03/05/2018',5,2,null,2,1,2);
-insert into Partie values(10,'03/05/2018',2,1,2,null,2,1);
+insert into Partie values(1,'2018-05-01',5,2,2,null,1,2);
+insert into Partie values(2,'2018-05-01',5,2,5,null,2,1);
+insert into Partie values(3,'2018-05-01',5,null,null,5,1,null);
+insert into Partie values(4,'2018-05-01',2,null,null,null,2,null);
+insert into Partie values(5,'2018-05-02',5,1,null,1,1,2);
+insert into Partie values(6,'2018-05-02',5,1,null,5,1,2);
+insert into Partie values(7,'2018-05-02',1,null,null,null,null,2);
+insert into Partie values(8,'2018-05-02',1,null,null,null,null,2);
+insert into Partie values(9,'2018-05-03',5,2,null,2,1,2);
+insert into Partie values(10,'2018-05-03',2,1,2,null,2,1);
 
