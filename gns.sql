@@ -1,6 +1,10 @@
 #------------------------------------------------------------
 #        Script MySQL.
 #------------------------------------------------------------
+drop database if exists gns;
+
+create database gns default character set utf8 default collate utf8_general_ci ;
+
 use gns;
 
 #------------------------------------------------------------
