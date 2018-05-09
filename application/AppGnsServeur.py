@@ -12,9 +12,6 @@ app.secret_key = 'gns'
 
 @app.route( '/partie' , methods = [ 'GET' ] )
 def index() :
-	lespartie= modeleGns.getParties()
-	for i in lespartie:
-		print i['dateCreation']
 	corpsReponse = json.dumps(modeleGns.getParties())
 	reponse = make_response(corpsReponse)
 	reponse.mimetype = 'appleication/json'
@@ -25,7 +22,5 @@ def index() :
 
 if __name__ == '__main__' :
 	
-		lespartie= modeleGns.getParties()
-		for i in lespartie:
-			print i['dateCreation']
+	
 
